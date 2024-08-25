@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tablero_context.git/static/css/main.55c0d8c7.css",
+    "main.js": "/tablero_context.git/static/js/main.5460473b.js",
+    "index.html": "/tablero_context.git/index.html",
+    "main.55c0d8c7.css.map": "/tablero_context.git/static/css/main.55c0d8c7.css.map",
+    "main.5460473b.js.map": "/tablero_context.git/static/js/main.5460473b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55c0d8c7.css",
+    "static/js/main.5460473b.js"
+  ]
+}
