@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/tablero_context.git/static/css/main.55c0d8c7.css",
-    "main.js": "/tablero_context.git/static/js/main.5460473b.js",
-    "index.html": "/tablero_context.git/index.html",
-    "main.55c0d8c7.css.map": "/tablero_context.git/static/css/main.55c0d8c7.css.map",
-    "main.5460473b.js.map": "/tablero_context.git/static/js/main.5460473b.js.map"
+    "main.css": "/tablero_context/static/css/main.55c0d8c7.css",
+    "main.js": "/tablero_context/static/js/main.d0974a79.js",
+    "index.html": "/tablero_context/index.html",
+    "main.55c0d8c7.css.map": "/tablero_context/static/css/main.55c0d8c7.css.map",
+    "main.d0974a79.js.map": "/tablero_context/static/js/main.d0974a79.js.map"
   },
   "entrypoints": [
     "static/css/main.55c0d8c7.css",
-    "static/js/main.5460473b.js"
+    "static/js/main.d0974a79.js"
   ]
 }
