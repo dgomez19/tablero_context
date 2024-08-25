@@ -5,6 +5,8 @@ import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoItem';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { TodoContext, TodoProvider } from '../TodoContext';
+import { Modal } from '../Modal';
+import { TodoForm } from '../TodoForm';
 
 // const defaultTodos = [
 //   { text: 'Cortar cebolla', completed: true },
@@ -17,7 +19,7 @@ import { TodoContext, TodoProvider } from '../TodoContext';
 // localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
 // localStorage.removeItem('TODOS_V1');
 
-function App() {  
+function App() {
   return (
         <>
         <TodoProvider>
@@ -30,24 +32,29 @@ function App() {
               error,
               searchedTodos,
               completeTodo,
-              deleteTodo
+              deleteTodo,
+              openModal
             }) => (
-              <TodoList loading={loading} error={error}>
-                {searchedTodos.map(todo => (
-                  <TodoItem
-                    key={todo.text}
-                    text={todo.text}
-                    completed={todo.completed}
-                    onComplete={() => completeTodo(todo.text)}
-                    onDelete={() => deleteTodo(todo.text)}
-                  />
-                ))} 
-              </TodoList>
+              <div>
+                <TodoList loading={loading} error={error}>
+                  {searchedTodos.map(todo => (
+                    <TodoItem
+                      key={todo.text}
+                      text={todo.text}
+                      completed={todo.completed}
+                      onComplete={() => completeTodo(todo.text)}
+                      onDelete={() => deleteTodo(todo.text)}
+                    />
+                  ))} 
+                </TodoList>
+
+                <CreateTodoButton />
+                { openModal && (<Modal>
+                  <TodoForm />
+                </Modal>)}
+              </div>
             )}
           </TodoContext.Consumer>
-
-          
-          <CreateTodoButton />
           </TodoProvider>
         </>
   );
